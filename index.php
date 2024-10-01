@@ -47,7 +47,7 @@
     // setting variables value to null.
     $PLN500 = null;$PLN200 = null;$PLN100 = null;$PLN50 = null;$PLN20 = null;$PLN10 = null;$PLN5 = null;$PLN2 = null;$PLN1 = null;$PLN50gr = null;$PLN20gr = null;$PLN10gr = null;$PLN5gr = null;$PLN2gr = null;$PLN1gr = null;
     // setting variables value to user input.
-    $PLN500 = $_POST['PLN500']; $PLN200 = $_POST['PLN200'];$PLN100 = $_POST['PLN100'];$PLN50 = $_POST['PLN50'];$PLN20 = $_POST['PLN20'];$PLN10 = $_POST['PLN10'];$PLN5 = $_POST['PLN5'];$PLN2 = $_POST['PLN2'];$PLN1 = $_POST['PLN1'];$PLN50gr = $_POST['PLN50gr'];$PLN20gr = $_POST['PLN20gr'];$PLN20gr = $_POST['PLN20gr'];$PLN10gr = $_POST['PLN10gr'];$PLN5gr = $_POST['PLN5gr'];$PLN2gr = $_POST['PLN2gr'];$PLN1gr = $_POST['PLN1gr'];
+    $PLN500 = (int) $_POST['PLN500']; $PLN200 = (int) $_POST['PLN200'];$PLN100 = (int)$_POST['PLN100'];$PLN50 = (int)$_POST['PLN50'];$PLN20 = (int)$_POST['PLN20'];$PLN10 =(int) $_POST['PLN10'];$PLN5 = (int)$_POST['PLN5'];$PLN2 = (int)$_POST['PLN2'];$PLN1 = (int)$_POST['PLN1'];$PLN50gr =(int) $_POST['PLN50gr'];$PLN20gr =(int) $_POST['PLN20gr'];$PLN20gr = (int)$_POST['PLN20gr'];$PLN10gr = (int)$_POST['PLN10gr'];$PLN5gr = (int)$_POST['PLN5gr'];$PLN2gr = (int)$_POST['PLN2gr'];$PLN1gr = (int)$_POST['PLN1gr'];
     //calculating total sum of money
     $PLNsum = null;
     $PLNsum = $PLN500* 500 + $PLN200* 200 + $PLN100* 100 + $PLN50* 50 + $PLN20* 20 + $PLN10* 10 + $PLN5* 5 + $PLN2* 2 + $PLN1* 1 + $PLN50gr* 0.5 + $PLN20gr* 0.2 + $PLN10gr* 0.1 + $PLN5gr* 0.05 + $PLN2gr* 0.02 + $PLN1gr* 0.01;
