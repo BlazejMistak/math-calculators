@@ -1,61 +1,133 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <meta name="author" content="Błażej Miśtak">
-    <title>Document</title>
+    <title>Money calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
-        <h1>money calculator</h1>
+        <h1>Money calculator</h1>
     </nav>
+    <section class="wrapped">
     <main>
-        <section class="money_usage">
+        <section class="money-description">
             <span>Money calculator</span>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, ullam reprehenderit maiores laboriosam quibusdam vitae excepturi delectus quisquam magnam? Magnam consequuntur cupiditate cum vitae, odit corporis possimus dicta laudantium ipsam!</p>
         </section>
-        <section class="money_calculator">
+        <section class="money-calculator">
             <form action="index.php" method="post">
-                <input type="number" name="PLN500" placeholder="500 PLN"><br>
-                <input type="number" name="PLN200" placeholder="200 PLN"><br>
-                <input type="number" name="PLN100" placeholder="100 PLN"><br>
-                <input type="number" name="PLN50" placeholder="50 PLN"><br>
-                <input type="number" name="PLN20" placeholder="20 PLN"><br>
-                <input type="number" name="PLN10" placeholder="10 PLN"><br>
-                <input type="number" name="PLN5" placeholder="5 PLN"><br>
-                <input type="number" name="PLN2" placeholder="2 PLN"><br>
-                <input type="number" name="PLN1" placeholder="1 PLN"><br>
-                <input type="number" name="PLN50gr" placeholder="0,50 PLN"><br>
-                <input type="number" name="PLN20gr" placeholder="0,20 PLN"><br>
-                <input type="number" name="PLN10gr" placeholder="0,10 PLN"><br>
-                <input type="number" name="PLN5gr" placeholder="0,05 PLN"><br>
-                <input type="number" name="PLN2gr" placeholder="0,02 PLN"><br>
-                <input type="number" name="PLN1gr" placeholder="0,01 PLN"><br>
+                <div class="input-container">
+                    <label>500 PLN:</label>
+                    <input type="number" name="PLN500" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>200 PLN:</label>
+                    <input type="number" name="PLN200" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>100 PLN:</label>
+                    <input type="number" name="PLN100" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>50 PLN:</label>
+                    <input type="number" name="PLN50" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>20 PLN:</label>
+                    <input type="number" name="PLN20" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>10 PLN:</label>
+                    <input type="number" name="PLN10" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>5 PLN:</label>
+                    <input type="number" name="PLN5" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>2 PLN:</label>
+                    <input type="number" name="PLN2" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>1 PLN:</label>
+                    <input type="number" name="PLN1" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>0,50 PLN:</label>
+                    <input type="number" name="PLN50gr" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>0,20 PLN:</label>
+                    <input type="number" name="PLN20gr" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>0,10 PLN:</label>
+                    <input type="number" name="PLN10gr" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>0,05 PLN:</label>
+                    <input type="number" name="PLN5gr" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>0,02 PLN:</label>
+                    <input type="number" name="PLN2gr" placeholder="500 PLN"><br>
+                </div>
+                <div class="input-container">
+                    <label>0,01 PLN:</label>
+                    <input type="number" name="PLN1gr" placeholder="500 PLN"><br>
+                </div>
                 <input type="submit" value="submit">
             </form>
-<?php 
-    // setting variables value to null.
-    $PLN500 = null;$PLN200 = null;$PLN100 = null;$PLN50 = null;$PLN20 = null;$PLN10 = null;$PLN5 = null;$PLN2 = null;$PLN1 = null;$PLN50gr = null;$PLN20gr = null;$PLN10gr = null;$PLN5gr = null;$PLN2gr = null;$PLN1gr = null;
-    // setting variables value to user input.
-    $PLN500 = (int) $_POST['PLN500']; $PLN200 = (int) $_POST['PLN200'];$PLN100 = (int)$_POST['PLN100'];$PLN50 = (int)$_POST['PLN50'];$PLN20 = (int)$_POST['PLN20'];$PLN10 =(int) $_POST['PLN10'];$PLN5 = (int)$_POST['PLN5'];$PLN2 = (int)$_POST['PLN2'];$PLN1 = (int)$_POST['PLN1'];$PLN50gr =(int) $_POST['PLN50gr'];$PLN20gr =(int) $_POST['PLN20gr'];$PLN20gr = (int)$_POST['PLN20gr'];$PLN10gr = (int)$_POST['PLN10gr'];$PLN5gr = (int)$_POST['PLN5gr'];$PLN2gr = (int)$_POST['PLN2gr'];$PLN1gr = (int)$_POST['PLN1gr'];
-    //checking if user input is not negative
-    if($PLN500<0 | $PLN200<0 | $PLN100<0 | $PLN50<0 | $PLN20<0 | $PLN10<0 | $PLN5<0 | $PLN2<0 | $PLN1<0 | $PLN50gr<0 | $PLN20gr<0 | $PLN10gr<0 | $PLN5gr<0 | $PLN2gr<0 | $PLN1gr<0){
+            <?php
+// Checking if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Setting variable values to user input or default to 0 if not set
+    $PLN500 = isset($_POST['PLN500']) ? (int)$_POST['PLN500'] : 0;
+    $PLN200 = isset($_POST['PLN200']) ? (int)$_POST['PLN200'] : 0;
+    $PLN100 = isset($_POST['PLN100']) ? (int)$_POST['PLN100'] : 0;
+    $PLN50  = isset($_POST['PLN50'])  ? (int)$_POST['PLN50']  : 0;
+    $PLN20  = isset($_POST['PLN20'])  ? (int)$_POST['PLN20']  : 0;
+    $PLN10  = isset($_POST['PLN10'])  ? (int)$_POST['PLN10']  : 0;
+    $PLN5   = isset($_POST['PLN5'])   ? (int)$_POST['PLN5']   : 0;
+    $PLN2   = isset($_POST['PLN2'])   ? (int)$_POST['PLN2']   : 0;
+    $PLN1   = isset($_POST['PLN1'])   ? (int)$_POST['PLN1']   : 0;
+
+    $PLN50gr  = isset($_POST['PLN50gr'])  ? (int)$_POST['PLN50gr']  : 0;
+    $PLN20gr  = isset($_POST['PLN20gr'])  ? (int)$_POST['PLN20gr']  : 0;
+    $PLN10gr  = isset($_POST['PLN10gr'])  ? (int)$_POST['PLN10gr']  : 0;
+    $PLN5gr   = isset($_POST['PLN5gr'])   ? (int)$_POST['PLN5gr']   : 0;
+    $PLN2gr   = isset($_POST['PLN2gr'])   ? (int)$_POST['PLN2gr']   : 0;
+    $PLN1gr   = isset($_POST['PLN1gr'])   ? (int)$_POST['PLN1gr']   : 0;
+
+    // Checking if user input is not negative
+    if ($PLN500 < 0 || $PLN200 < 0 || $PLN100 < 0 || $PLN50 < 0 || $PLN20 < 0 || $PLN10 < 0 || $PLN5 < 0 || $PLN2 < 0 || $PLN1 < 0 || 
+        $PLN50gr < 0 || $PLN20gr < 0 || $PLN10gr < 0 || $PLN5gr < 0 || $PLN2gr < 0 || $PLN1gr < 0) {
         echo "Wprowadzono nieprawidłową liczbę banknotów/monet. Liczba banknotów/monet nie może być mniejsza od 0.";
+    } else {
+        // Calculating the total sum of money
+        $PLNsum = $PLN500 * 500 + $PLN200 * 200 + $PLN100 * 100 + $PLN50 * 50 + $PLN20 * 20 + $PLN10 * 10 + $PLN5 * 5 + $PLN2 * 2 + $PLN1 * 1 +
+                  $PLN50gr * 0.5 + $PLN20gr * 0.2 + $PLN10gr * 0.1 + $PLN5gr * 0.05 + $PLN2gr * 0.02 + $PLN1gr * 0.01;
+
+        echo "Suma wynosi {$PLNsum} PLN.<br>";
     }
-    else{
-    //calculating total sum of money
-    $PLNsum = null;
-    $PLNsum = $PLN500* 500 + $PLN200* 200 + $PLN100* 100 + $PLN50* 50 + $PLN20* 20 + $PLN10* 10 + $PLN5* 5 + $PLN2* 2 + $PLN1* 1 + $PLN50gr* 0.5 + $PLN20gr* 0.2 + $PLN10gr* 0.1 + $PLN5gr* 0.05 + $PLN2gr* 0.02 + $PLN1gr* 0.01;
-    echo "Suma wynosi {$PLNsum} PLN. <br>";
-    }
+} else {
+    echo "Formularz nie został przesłany.";
+}
 ?>
         </section>
     </main>
     <aside></aside>
+    </section>
     <footer>
         <span>Author: Błażej Miśtak</span>
     </footer>
 </body>
 </html>
-

@@ -1,0 +1,81 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --backgorund: #00171f;
+  --text: #ffffff;
+  --asides: #000;
+  --sky: #adebff;
+}
+
+nav {
+  height: 9vh;
+  width: 100%;
+  background-color: var(--asides);
+  color: var(--text);
+}
+
+nav h1 {
+  padding-top: 10px;
+  padding-left: 13px;
+}
+
+.wrapped {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main {
+  width: 85%;
+  background-color: var(--backgorund);
+  color: var(--text);
+  display: flex;
+  gap: 80px;
+}
+
+.money-calculator form {
+  align-items: center;
+}
+
+.money-description {
+  width: 300px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  flex: 1;
+  text-align: left;
+}
+
+input {
+  flex: 1;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.money-calculator input {
+  background-color: var(--asides);
+  border: none;
+  color: var(--text);
+  width: 200px;
+  height: 30px;
+  margin-bottom: 7px;
+  border-radius: 8px;
+}
+
+aside {
+  width: 15%;
+  background-color: var(--asides);
+}
+
+footer {
+  color: var(--text);
+  background-color: var(--asides);
+}
