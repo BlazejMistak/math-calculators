@@ -1,5 +1,12 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -31,7 +38,7 @@ main {
   background-color: var(--backgorund);
   color: var(--text);
   display: flex;
-  gap: 80px;
+  gap: 390px;
 }
 
 .money-calculator form {
@@ -40,13 +47,27 @@ main {
 
 .money-description {
   width: 300px;
+  margin: 40px 0 0 60px;
+}
+
+.money-description span {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 9px;
+}
+
+.money-description p {
+  font-weight: 200;
+  font-size: 14px;
+  padding-top: 9px;
 }
 
 .input-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  margin-top: 6px;
 }
 
 label {
@@ -60,6 +81,11 @@ input {
   width: 100px;
 }
 
+input:active {
+  transition: 0.1s;
+  border: #ffffff solid;
+}
+
 .money-calculator input {
   background-color: var(--asides);
   border: none;
@@ -70,6 +96,16 @@ input {
   border-radius: 8px;
 }
 
+.submit {
+  margin-top: 16px;
+  margin-left: 25px;
+}
+
+.submit:hover {
+  transition: 0.4s;
+  border: #a7a7a7 solid;
+}
+
 aside {
   width: 15%;
   background-color: var(--asides);
@@ -78,4 +114,28 @@ aside {
 footer {
   color: var(--text);
   background-color: var(--asides);
+}
+
+footer span {
+  color: var(--text);
+  margin: 4px 0 4px 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+footer a:hover {
+  transition: 0.3s;
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }

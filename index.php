@@ -14,77 +14,77 @@
 
 <body>
     <nav>
-        <h1>Money calculator</h1>
+        <h1>PLN calculator</h1>
     </nav>
     <section class="wrapped">
     <main>
         <section class="money-description">
-            <span>Money calculator</span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, ullam reprehenderit maiores laboriosam quibusdam vitae excepturi delectus quisquam magnam? Magnam consequuntur cupiditate cum vitae, odit corporis possimus dicta laudantium ipsam!</p>
+            <span>Kalkulator PLN</span>
+            <p>Wstaw odpowiednią liczbę banknotów lub monet w pole edycyjne. Po wprowadzeniu naciśnij przycisk "prześlij". Zwrócona zostanie suma pieniędzy. Nie należy podawać warości negatywnych oraz wartości niecałkowitych.</p>
         </section>
         <section class="money-calculator">
             <form action="index.php" method="post">
                 <div class="input-container">
                     <label>500 PLN:</label>
-                    <input type="number" name="PLN500" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN500" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>200 PLN:</label>
-                    <input type="number" name="PLN200" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN200" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>100 PLN:</label>
-                    <input type="number" name="PLN100" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN100" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>50 PLN:</label>
-                    <input type="number" name="PLN50" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN50" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>20 PLN:</label>
-                    <input type="number" name="PLN20" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN20" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>10 PLN:</label>
-                    <input type="number" name="PLN10" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN10" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>5 PLN:</label>
-                    <input type="number" name="PLN5" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN5" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>2 PLN:</label>
-                    <input type="number" name="PLN2" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN2" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>1 PLN:</label>
-                    <input type="number" name="PLN1" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN1" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>0,50 PLN:</label>
-                    <input type="number" name="PLN50gr" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN50gr" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>0,20 PLN:</label>
-                    <input type="number" name="PLN20gr" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN20gr" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>0,10 PLN:</label>
-                    <input type="number" name="PLN10gr" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN10gr" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>0,05 PLN:</label>
-                    <input type="number" name="PLN5gr" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN5gr" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>0,02 PLN:</label>
-                    <input type="number" name="PLN2gr" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN2gr" placeholder="ilość sztuk"><br>
                 </div>
                 <div class="input-container">
                     <label>0,01 PLN:</label>
-                    <input type="number" name="PLN1gr" placeholder="500 PLN"><br>
+                    <input type="number" name="PLN1gr" placeholder="ilość sztuk"><br>
                 </div>
-                <input type="submit" value="submit">
+                <input type="submit" value="Prześlj" class="submit">
             </form>
             <?php
 // Checking if form is submitted
@@ -127,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <aside></aside>
     </section>
     <footer>
-        <span>Author: Błażej Miśtak</span>
+        <span>author: <a href="https://github.com/BlazejMistak">Błażej Miśtak</a></span>
     </footer>
 </body>
 </html>
