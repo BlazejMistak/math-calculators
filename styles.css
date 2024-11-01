@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--backgorund);
 }
 
 :root {
@@ -130,6 +131,11 @@ footer a:hover {
   transition: 0.3s;
   color: #b8b8b8;
   text-decoration: none;
+}
+
+.button-submit {
+  background-color: var(--backgorund);
+  border: none;
 }
 
 input::-webkit-outer-spin-button,
